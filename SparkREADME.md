@@ -1,2 +1,0 @@
-
-#Spark Related Useful tipls
