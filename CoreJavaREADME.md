@@ -65,12 +65,13 @@ public static List<File> getAllFile(String directoryName) {
 
 ``` 
 #### Maven Dependency: 
-
+```xml
 <dependency>
     <groupId>commons-io</groupId>
     <artifactId>commons-io</artifactId>
     <version>2.5</version>
 </dependency>
+```
 
 ### Deleting a Directory and its sub directories:
 ```java
@@ -90,10 +91,12 @@ public static void deleteDirectory(String directoryName) {
 ```
 
 #### Maven Dependency: 
-
+```xml
 <dependency>
     <groupId>commons-io</groupId>
     <artifactId>commons-io</artifactId>
     <version>2.5</version>
 </dependency>
+
+```
 
