@@ -62,4 +62,38 @@ public static List<File> getAllFile(String directoryName) {
 			FileFilterUtils.makeSVNAware(null));
 	return new ArrayList<>(listFiles);
 }
+
+#### Maven Dependency: 
+
+<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.5</version>
+</dependency>
+
+``` 
+
+### Deleting a Directory and its sub directories:
+```java
+import java.io.*;
+import org.apache.commons.io.FileUtils;
+public static void deleteDirectory(String directoryName) {
+	File file = new File(directoryName);
+	try {
+		FileUtils.deleteDirectory(file);
+		System.out.println("Directory <" + directoryName + "> has been deleted Successfully.");
+	} catch (IOException ex) {
+		System.out.println("Encountered exception while deleting a directory <" + directoryName + ">");
+		ex.printStackTrace();
+	}
+}
+
+#### Maven Dependency:
+
+<dependency>
+    <groupId>commons-io</groupId>
+    <artifactId>commons-io</artifactId>
+    <version>2.5</version>
+</dependency>
+
 ```
