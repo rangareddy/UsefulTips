@@ -63,6 +63,7 @@ public static List<File> getAllFile(String directoryName) {
 	return new ArrayList<>(listFiles);
 }
 
+``` 
 #### Maven Dependency: 
 
 <dependency>
@@ -70,8 +71,6 @@ public static List<File> getAllFile(String directoryName) {
     <artifactId>commons-io</artifactId>
     <version>2.5</version>
 </dependency>
-
-``` 
 
 ### Deleting a Directory and its sub directories:
 ```java
@@ -88,7 +87,9 @@ public static void deleteDirectory(String directoryName) {
 	}
 }
 
-#### Maven Dependency:
+```
+
+#### Maven Dependency: 
 
 <dependency>
     <groupId>commons-io</groupId>
@@ -96,4 +97,3 @@ public static void deleteDirectory(String directoryName) {
     <version>2.5</version>
 </dependency>
 
-```
